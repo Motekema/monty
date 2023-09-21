@@ -22,7 +22,7 @@ void f_pchar(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	if (he->n > 127 || h->n < 0)
+	if (he->n > 127 || he->n < 0)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", counter);
 		fclose(bus.file);
